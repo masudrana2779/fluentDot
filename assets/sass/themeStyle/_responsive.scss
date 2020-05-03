@@ -41,12 +41,20 @@
         padding-left: 100px;
         padding-right: 100px;
     }
+    .servicesWrap {
+        margin-bottom: 100px;
+    }
     
 }
 /* End of @media (max-width: 1366px) */
 
 @media (min-width: 768px) and (max-width: 1024px) {   
-    
+    .mainBody .mainMenu {
+        left: 0;
+    }
+    .servicesWrap {
+        margin-bottom: 50px;
+    }
 }
 /* End of @media (min-width: 768px) and (max-width: 1024px) */
 
@@ -56,7 +64,16 @@
 /* End of @media (max-width: 991px) */
 
 @media (min-width: 768px) {
-    
+    .servicesWrap {
+        margin-bottom: 0;
+    }
+    .mainBodyWrap {
+        padding: 0 50px;
+    }
+    .servicesWrap, .worksWrap, .teamWrap, .aboutWrap, .contactWrap {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 /* End of @media (min-width: 768px) */
 
