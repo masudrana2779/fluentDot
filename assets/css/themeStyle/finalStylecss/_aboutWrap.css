@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    	aboutWrap style
+\*------------------------------------*/
+.aboutBody {
+  background: url(../images/about-bg.png) no-repeat scroll 15px center/500px auto;
+  min-height: 614px; }
+
+.aboutTextWrap {
+  height: 380px;
+  display: table;
+  background: rgba(255, 46, 66, 0.7);
+  max-width: 800px;
+  width: 100%;
+  padding: 45px; }
+  .aboutTextWrap .btn.fluent-btn {
+    border-color: #fff; }
+    .aboutTextWrap .btn.fluent-btn:hover {
+      background: #fff; }
+      .aboutTextWrap .btn.fluent-btn:hover .dotCircle {
+        background-image: url(../images/dot-img-red.png);
+        color: #f72e42; }
+
+.aboutTextContent {
+  display: table-cell;
+  vertical-align: middle; }
+
+.aboutText {
+  font-family: "exoregular";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 40px; }

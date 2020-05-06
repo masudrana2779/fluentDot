@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    	header style
+\*------------------------------------*/
+header {
+    &.header {
+        padding-top: 20px;
+        background : url(../images/follow-bg.png) no-repeat scroll right top / 700px 120px;
+        position   : fixed;
+        top        : 0;
+        left       : 0;
+        width      : 100%;
+        z-index    : 2;
+        transition : all 0.5s;
+    }
+}
+
+
+.logo {
+    a {
+        display: inline-block;
+        img {
+            max-width : 120px;
+            width     : 100%;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.followUsContent {
+    margin-top: 12px;
+    transition: all 0.5s;
+    .followTitle {
+        display    : inline-block;
+        font-family: 'exoregular';
+        font-size  : 20px;
+        transition : all 0.5s;
+    }
+
+}
+
+.followUs {
+    padding   : 0;
+    margin    : 0;
+    list-style: none;
+    display   : inline-block;
+    li {
+        color      : #fff;
+        display    : inline-block;
+        line-height: 35px;
+        margin-left: 15px;
+        a {
+            display   : inline-block;
+            opacity   : 0.6;
+            transition: all 0.5s;
+            &:hover {
+                opacity: 1;
+
+            }
+            img {
+                display   : inline-block;
+                max-width : 35px;
+                width     : 100%;
+                transition: all 0.5s;
+            }
+
+        }
+        &:first-child {
+            margin-left: 45px;
+        }
+        &:first-child {
+            margin-left: 45px;
+        }
+        
+    }
+    
+}

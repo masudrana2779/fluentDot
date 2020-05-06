@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*------------------------------------*\
+ 		Global style
+\*------------------------------------*/
+body {
+    font-family: "exoregular";
+    background : url(../images/body-bg1.png) no-repeat fixed top left / 100% 100%;
+    height     : 100vh;
+    font-size  : 16px;
+    line-height: 26px;
+    position   : relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.block {
+    float: left;
+    width: 100%;
+}
+input,
+select,
+textarea,
+button {
+    &:focus {
+        outline: none !important;
+    }
+}
+a {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+.mbShow {
+    display: none;
+}
+.dotCircle {
+    background   : url(../images/dot-img.png) no-repeat scroll right center;
+    padding-right: 50px;
+    color        : #fff;
+    transition   : all 0.5s;
+}
+.primary-color {
+    color: #fff;
+}
+.brand-color {
+    color: #f72e42;
+}
+.fluent-btn {
+    border        : 1px solid #f72e42;
+    background    : transparent;
+    max-width     : 190px;
+    width         : 100%;
+    height        : 50px;
+    text-transform: uppercase;
+    font-size     : 14px;
+    font-family   : 'exoregular';
+    transition    : all .5s;
+    padding-top   : 0;
+    line-height   : 50px;
+}
+.fluent-btn {
+    &:hover {
+        background: #f72e42;
+    }
+}
+
+.fluent-btn {
+    .dotCircle {
+        transition: all 0.5s;
+    }
+}
+
+.fluent-btn {
+    &:hover {
+        .dotCircle {
+            margin-right : -5px;
+            padding-right: 55px;
+        }
+    }
+}
+
+.titleDotCircle {
+    background   : url(../images/title-dot-img.png) no-repeat scroll right center / 44px auto;
+    padding-right: 60px;
+    display      : inline-block;
+}
+
+.title {
+    font-size     : 34px;
+    line-height   : 58px;
+    letter-spacing: 2px;
+    margin-bottom : 60px;
+}

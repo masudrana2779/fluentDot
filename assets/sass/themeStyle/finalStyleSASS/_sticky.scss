@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    	sticky style
+\*------------------------------------*/
+.fluentFixed {
+    header {
+        padding-top    : 15px;
+        background-size: 600px 65px;
+    }
+
+    .logo {
+        a {
+            img {
+                max-width: 60px;
+            }
+        }
+    }
+
+    .followUsContent {
+        margin-top: 0;
+        .followTitle {
+            font-size: 14px;
+        }
+    }
+    .followUs {
+        li {
+            a {
+                img {
+                    max-width: 25px;
+                }
+            }
+        }
+    }
+    footer {
+        .fluent-footer {
+            height         : 80px;
+            background-size: 600px 100%;
+            padding-top    : 45px;
+        }
+    
+    }
+    .scrollDown {
+        opacity   : 0;
+        visibility: hidden;
+    }
+}

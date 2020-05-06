@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    	servicesWrap style
+\*------------------------------------*/
+.servicesWrap {
+    margin-bottom: 180px;
+}
+.serviceItem {
+    margin-bottom: 100px;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+    &:hover {
+        &.serviceTitle {
+            color: #f72e42;
+        }
+        &.serviceDetails {
+            opacity: 1;
+        }
+    }
+}
+.serviceImg {
+    margin-bottom: 35px;
+    display      : inline-block;
+    position     : relative;
+    img {
+        max-width: 71px;
+        width    : 100%;
+    }
+}
+.serviceTitle {
+    font-size     : 20px;
+    letter-spacing: 1px;
+    margin-bottom : 25px;
+    transition    : all 0.5s;
+}
+.serviceDetails {
+    max-width    : 310px;
+    width        : 100%;
+    margin-bottom: 35px;
+    opacity      : 0.6;
+    transition   : all 0.5s;
+}

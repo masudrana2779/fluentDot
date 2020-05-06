@@ -1,0 +1,59 @@
+
+
+
+/*   mbMenu   */
+
+.st-container {
+    &.st-menu-open {
+        overflow: hidden;
+    }
+}
+
+.mbMenu {
+    button {
+        max-width : 40px;
+        min-width : 40px;
+        position  : relative;
+        width     : 100%;
+        float     : right;
+        margin-top: 18px;
+        height    : 32px;
+        background: none;
+        border    : none;
+        box-shadow: none;
+        .menu-icon {
+            display           : inline-block;
+            border-radius     : 5px;
+            height            : 2px;
+            width             : 100%;
+            position          : absolute;
+            right             : 0;
+            background        : #f00;
+            -webkit-transition: all 0.5s;
+            -ms-transition    : all 0.5s;
+            -o-transition     : all 0.5s;
+            transition        : all 0.5s;
+
+        }
+        &.menu-icon-1 {
+            top: 0;
+        }
+        &.menu-icon-2 {
+            top  : 20%;
+            width: 80%;
+        }
+        &.menu-icon-3 {
+            top  : 37%;
+            width: 60%;
+        }
+        &.menu-icon-4 {
+            top: 57%;
+        }
+        &:hover {
+            .menu-icon {
+                width: 100%;
+            }
+        }
+    }
+}
+ 

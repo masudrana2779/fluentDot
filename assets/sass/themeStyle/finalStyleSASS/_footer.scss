@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    	footer style
+\*------------------------------------*/
+footer {
+    &.fluent-footer {
+        background: url(../images/copy-right-bg1.png) no-repeat scroll bottom left / 700px 100%;
+        height    : 120px;
+        position  : fixed;
+        bottom    : 0;
+        left      : 0;
+        padding   : 75px 0 0 50px;
+        z-index   : 2;
+        transition: all 0.5s;
+    }
+}
+.copyRightWrap {
+    font-size     : 14px;
+    font-family   : 'exolight';
+    letter-spacing: 1px;
+    a {
+        color      : #000;
+        font-family: 'exodemibold';
+        transition : all 0.5s;
+        &:hover {
+            color     : #f72e42;
+            transition: all 0.5s;
+        }
+    }
+    
+}
+.scrollDown {
+    position  : absolute;
+    bottom    : 20px;
+    right     : 30px;
+    transition: all 0.5s;
+    img {
+        max-width: 17px;
+        width    : 100%;
+    }
+}
