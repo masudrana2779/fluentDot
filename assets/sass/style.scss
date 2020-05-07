@@ -1,3 +1,7 @@
+
+
+// BasicStyle SASS
+
 @import "./globalStyle/bootstrap/bootstrap.min";
 @import "../vendors/sidebarEffects/sidebarEffects.css";
 @import "../vendors/font-awesome.min/css/font-awesome.min.css";
@@ -10,16 +14,16 @@
 
 // CustomStyle SASS
 
-@import "./themeStyle/finalStyleSASS/sticky";
 @import "./themeStyle/finalStyleSASS/global";
 @import "./themeStyle/finalStyleSASS/headerStyle";
+@import "./themeStyle/finalStyleSASS/sticky";
+@import "./themeStyle/finalStyleSASS/mbMenu";
 @import "./themeStyle/finalStyleSASS/mainBodyStyle";
 @import "./themeStyle/finalStyleSASS/servicesWrap";
 @import "./themeStyle/finalStyleSASS/worksWrap";
 @import "./themeStyle/finalStyleSASS/aboutWrap";
 @import "./themeStyle/finalStyleSASS/contactWrap";
 @import "./themeStyle/finalStyleSASS/footer";
-@import "./themeStyle/finalStyleSASS/mbMenu";
 
 
 // CustomStyle SASS
