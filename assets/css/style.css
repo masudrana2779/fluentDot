@@ -8333,7 +8333,7 @@ header.header {
           color: #f72e42; }
         .mainBody .mainMenu ul li a:focus {
           color: #fff; }
-        .mainBody .mainMenu ul li a.active.dotCircle:hover {
+        .mainBody .mainMenu ul li a.active.dotCircle, .mainBody .mainMenu ul li a.active:hover {
           background-image: url(../images/dot-img-red.png);
           margin-right: -5px;
           padding-right: 55px; }
