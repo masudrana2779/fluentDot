@@ -8,7 +8,7 @@ $(document).ready(function () {
 		if (target.length) {
 			event.preventDefault();
 			$('html, body').stop().animate({
-				scrollTop: target.offset().top - 120
+				scrollTop: target.offset().top - 150
 			}, 2000);
 		}
 	});

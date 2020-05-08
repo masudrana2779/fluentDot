@@ -2,7 +2,6 @@
     	mainBody style
 \*------------------------------------*/
 
-
 .mainBody {
     .mainMenu {
         position: fixed;
@@ -39,14 +38,13 @@
                         color: #fff;
                     }
 
-                    &.active {
-                        &.dotCircle,
+                    &.dotCircle {
+                        &.active,
                         &:hover {
                             background-image: url(../images/dot-img-red.png);
                             margin-right    : -5px;
                             padding-right   : 55px;
                         }
-
                     }
                 }
             }
