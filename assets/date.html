@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+
+    <input type="text" name="issuedDate" id="id_issued_date" />
+    <input type="text" name="expiry_date" id="id_expiry_date" />
+    <button type="button" class="someclass">Check</button>
+
+    <h2>Result - <b id="result"></b></h2>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('input[name="issuedDate"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                issued_date: moment().startOf('hour'),
+                locale: {
+                    "format": "DD/MM/YYYY",
+                }
+            });
+
+            $('input[name="expiry_date"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                expiry_date: moment().startOf('hour'),
+                locale: {
+                    "format": "DD/MM/YYYY",
+                }
+            });
+
+            $(".someclass").click(function () {
+                var start_date = document.getElementById('id_issued_date').value;
+                var end_date = document.getElementById('id_expiry_date').value;
+                var New_start_date = new Date(start_date).getTime();
+                var New_end_date = new Date(end_date).getTime();
+                console.log(New_start_date);
+                console.log(New_end_date);
+                if (start_date < end_date) {
+                    console.log("OK start_date is - (", start_date, ") and end_date is - (", end_date, ')');
+                    $("#result").html("OK start_date is - (" + start_date + ") and end_date is - (" + end_date + ')');
+                }
+                else {
+                    console.log('start date (', start_date, ') should be less than End Date (', end_date, ')');
+                    $("#result").html('start date (' + start_date + ') should be less than End Date (' + end_date + ')');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

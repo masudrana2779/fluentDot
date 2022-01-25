@@ -8727,9 +8727,13 @@ footer.fluent-footer {
 @media (min-width: 768px) {
   .mainBodyWrap {
     padding: 0 50px; }
-  .servicesWrap, .worksWrap, .teamWrap, .aboutWrap, .contactWrap {
-    padding-left: 30px;
-    padding-right: 30px; } }
+  .servicesWrap,
+  .worksWrap,
+  .teamWrap,
+  .aboutWrap,
+  .contactWrap {
+    min-height: 100vh;
+    padding: 50px 30px; } }
 
 /* End of @media (min-width: 768px) */
 @media (max-width: 767px) {
