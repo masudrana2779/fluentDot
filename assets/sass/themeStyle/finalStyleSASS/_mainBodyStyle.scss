@@ -3,53 +3,58 @@
 \*------------------------------------*/
 
 .mainBody {
-    .mainMenu {
-        position: fixed;
-        left    : 95px;
-        top     : 0;
-        height  : 100vh;
-        display : table;
+}
 
-        ul {
-            margin        : 0;
-            padding       : 0;
-            list-style    : none;
-            display       : table-cell;
-            vertical-align: middle;
+.leftSidebarWrap {
 
-            li {
-                margin-bottom: 15px;
+}
+.mainMenu {
+  position: fixed;
+  left: 95px;
+  top: 0;
+  height: 100vh;
+  display: table;
+  z-index: 10;
 
-                a {
-                    display        : block;
-                    text-decoration: none;
-                    font-family    : "exolight";
-                    font-size      : 14px;
-                    letter-spacing : 1px;
-                    transition     : all 0.5s;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
 
-                    &.active:focus,
-                    &.active,
-                    &:hover {
-                        color: #f72e42;
-                    }
+    li {
+      margin-bottom: 15px;
 
-                    &:focus {
-                        color: #fff;
-                    }
+      a {
+        display: block;
+        text-decoration: none;
+        font-family: "exolight";
+        font-size: 14px;
+        letter-spacing: 1px;
+        transition: all 0.5s;
 
-                    &.dotCircle {
-                        &.active,
-                        &:hover {
-                            background-image: url(../images/dot-img-red.png);
-                            margin-right    : -5px;
-                            padding-right   : 55px;
-                        }
-                    }
-                }
-            }
+        &.active:focus,
+        &.active,
+        &:hover {
+          color: #f72e42;
         }
+
+        &:focus {
+          color: #fff;
+        }
+
+        &.dotCircle {
+          &.active,
+          &:hover {
+            background-image: url(../images/dot-img-red.png);
+            margin-right: -5px;
+            padding-right: 55px;
+          }
+        }
+      }
     }
+  }
 }
 
 
@@ -59,38 +64,38 @@
 
 
 .mainBodyWrap {
-    padding      : 15px 0 0;
-    // margin-top: -25px;
-    position     : relative;
-    z-index      : 1;
+  padding: 15px 0 0;
+  // margin-top: -25px;
+  position: relative;
+  z-index: 1;
 }
 
 .weAerFluentContent {
-    display    : flex;
-    align-items: center;
-    height     : 100vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 
-    .weAerFluentSlider {
-        .slick-initialized {
-            .slick-slide {
-                outline: none;
-            }
-        }
+  .weAerFluentSlider {
+    .slick-initialized {
+      .slick-slide {
+        outline: none;
+      }
     }
+  }
 }
 
 .fluentTitle {
-    font-size     : 40px;
-    font-family   : "exodemibold";
-    letter-spacing: 2px;
-    line-height   : 54px;
-    margin-bottom : 50px;
+  font-size: 40px;
+  font-family: "exodemibold";
+  letter-spacing: 2px;
+  line-height: 54px;
+  margin-bottom: 50px;
 
 }
 
 .fluentDetails {
-    max-width: 700px;
-    color    : #fff;
-    margin   : 0 auto 50px;
-    opacity  : 0.6;
+  max-width: 700px;
+  color: #fff;
+  margin: 0 auto 50px;
+  opacity: 0.6;
 }

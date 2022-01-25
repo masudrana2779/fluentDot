@@ -8306,21 +8306,22 @@ header.header {
 /*------------------------------------*\
     	mainBody style
 \*------------------------------------*/
-.mainBody .mainMenu {
+.mainMenu {
   position: fixed;
   left: 95px;
   top: 0;
   height: 100vh;
-  display: table; }
-  .mainBody .mainMenu ul {
+  display: table;
+  z-index: 10; }
+  .mainMenu ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: table-cell;
     vertical-align: middle; }
-    .mainBody .mainMenu ul li {
+    .mainMenu ul li {
       margin-bottom: 15px; }
-      .mainBody .mainMenu ul li a {
+      .mainMenu ul li a {
         display: block;
         text-decoration: none;
         font-family: "exolight";
@@ -8329,11 +8330,11 @@ header.header {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s; }
-        .mainBody .mainMenu ul li a.active:focus, .mainBody .mainMenu ul li a.active, .mainBody .mainMenu ul li a:hover {
+        .mainMenu ul li a.active:focus, .mainMenu ul li a.active, .mainMenu ul li a:hover {
           color: #f72e42; }
-        .mainBody .mainMenu ul li a:focus {
+        .mainMenu ul li a:focus {
           color: #fff; }
-        .mainBody .mainMenu ul li a.dotCircle.active, .mainBody .mainMenu ul li a.dotCircle:hover {
+        .mainMenu ul li a.dotCircle.active, .mainMenu ul li a.dotCircle:hover {
           background-image: url(../images/dot-img-red.png);
           margin-right: -5px;
           padding-right: 55px; }
@@ -8685,6 +8686,63 @@ footer.fluent-footer {
   .scrollDown img {
     max-width: 17px;
     width: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.section {
+  height: 100%;
+  width: calc(100% / 5);
+  float: left;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.section:nth-child(1) {
+  background: transparent; }
+
+.section:nth-child(2) {
+  background: transparent; }
+
+.section:nth-child(3) {
+  background: transparent; }
+
+.section:nth-child(4) {
+  background: transparent; }
+
+.section:nth-child(5) {
+  background: transparent; }
+
+.sections {
+  width: 500%;
+  height: 100%;
+  background: transparent; }
+
+.sectionTitle {
+  font-size: 30px;
+  color: #fff; }
 
 /*--------------------------------------------------------------------------
 ----------------------------------------------------------------------------
